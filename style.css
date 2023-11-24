@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Gilroy;
+    background: #faedcd;
+}
+h1{
+    text-align: center;
+}
+h3{
+    font-size: medium;
+    font-family: Quickpen ;
+    display: flex;
+    justify-content: center;
+}
+
+#addTask{
+    background-color: transparent;
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 35%;
+    border: solid #d4a373;
+    padding: 10px ;
+    font-size: medium;
+    
+}
+button{
+    background-color: transparent;
+    width: 90px;
+    height: 50px;
+    pad: 20px;
+    border-radius: 10px;
+    position: relative;
+    left: 36%;
+    border: solid #d4a373;
+    padding:  5px;
+}
+button:active{
+    background: #d4a373;
+    color: #fff;
+}
+
+ul {
+   padding: 10px;
+   width: 38vw;
+    min-height: 20vw;
+    border-radius: 10px;
+    position: relative;
+    left: 35%;
+    border: solid #d4a373;
+    list-style: none;
+}
+li{ 
+    display: flex;
+    position: relative;
+    top: 10px;
+    margin-bottom: 10px;
+    padding-right: 20px;
+    text-align: justify;
+    font-weight: 750;
+    cursor: pointer;
+   
+}
+ul li span{
+   position: absolute;
+    right: 0px;
+    width: 18px;
+    height: 25px;
+    border-radius: 20%;
+    font-size: 22px;
+}
+ul li span:hover{
+    background-color: #d4a373;
+}
+.decor {
+    text-decoration: line-through;
+    color: #909090;
+}
+
+/* _____________
+                           Media Query */
+@media( width < 480px){ 
+    body{
+        margin-top: 50px;
+    }
+    #addTask{
+        width: 150px;
+        height: 20px;
+        left: 12%;
+    }
+    button{
+      
+        left: 15%;
+    }
+    ul{
+        width: 58vw;
+        left: 12%;
+    }
+}
